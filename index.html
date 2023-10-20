@@ -91,6 +91,31 @@ const d = new Date();
 document.getElementById("date&time").innerHTML = d;
 
 </script>
+
+<head>
+  <title>Change Button Colour</title>
+</head>
+<body>
+  <button id="colorButton">Click me to change colour</button>
+
+<script>
+  //Get a reference to the ubtton element
+  var button = document.getElementById("colourButton");
+
+  // Function to change the button colour
+  function changeColor(){
+    //Generate a random hex colour
+    var randomColor = "#" +Math.florr(Math.random()*16777215).toString(16);
+
+    //set the button's background color to the random color
+    button.style.backgroundColor = randomColor;
+  }
+
+  //Add a click event listener to the button
+  button.addEventListener("click",changeColor);
+  
+</script>
+</body>
   
   
     </head>
