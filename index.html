@@ -92,30 +92,52 @@ document.getElementById("date&time").innerHTML = d;
 
 </script>
 
-<head>
-  <title>Change Button Colour</title>
-</head>
-<body>
-  <button id="colorButton">Click me to change colour</button>
+//<head>
+//  <title>Change Button Colour</title>
+//</head>
+//<body>
+//  <button id="colorButton">Click me to change colour</button>
 
-<script>
+//<script>
   //Get a reference to the button element
-  var button = document.getElementById("colorButton");
+//  var button = document.getElementById("colorButton");
 
   // Function to change the button colour
-  function changeColor() {
-    //Generate a random hex colour
-    var randomColor = "#" +Math.floor(Math.random()*16777215).toString(16);
+//  function changeColor() {
+//    //Generate a random hex colour
+//    var randomColor = "#" +Math.floor(Math.random()*16777215).toString(16);
 
-    //set the button's background color to the random color
-    button.style.backgroundColor = randomColor;
-  }
+//    //set the button's background color to the random color
+//    button.style.backgroundColor = randomColor;
+//  }
 
-  //Add a click event listener to the button
-  button.addEventListener("click",changeColor);
+//  //Add a click event listener to the button
+//  button.addEventListener("click",changeColor);
   
-</script>
+//</script>
+//</body>
+<head>
+ <title>Change Button Colour</title>
+</head>
+<body>
+ <button id="colorButton">Click me to change colour</button>
+
+ <script>
+ // Get a reference to the button element
+ var button = document.getElementById("colorButton");
+ // Function to change the button color
+ function changeColor() {
+ // Generate a random color (hexadecimal)
+ var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+
+ // Set the button's background color to the random color
+ button.style.backgroundColor = randomColor;
+ }
+ // Add a click event listener to the button
+ button.addEventListener("click", changeColor);
+ </script>
 </body>
+</html>
   
   
     </head>
