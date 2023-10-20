@@ -99,13 +99,13 @@ document.getElementById("date&time").innerHTML = d;
   <button id="colorButton">Click me to change colour</button>
 
 <script>
-  //Get a reference to the ubtton element
-  var button = document.getElementById("colourButton");
+  //Get a reference to the button element
+  var button = document.getElementById("colorButton");
 
   // Function to change the button colour
-  function changeColor(){
+  function changeColor() {
     //Generate a random hex colour
-    var randomColor = "#" +Math.florr(Math.random()*16777215).toString(16);
+    var randomColor = "#" +Math.floor(Math.random()*16777215).toString(16);
 
     //set the button's background color to the random color
     button.style.backgroundColor = randomColor;
