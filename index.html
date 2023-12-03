@@ -41,6 +41,24 @@
 p.ex1 {
   margin-left: 250px;
 }
+
+
+
+<!table of contents>
+<table>
+
+<tr>
+  <th><h3>Table of contents</h3></th>
+</tr>
+<tr>
+  <td><a href="#Abstract">Abstract</td>
+</tr>
+<tr>
+  <td><a href="#Article">Article</td>
+</tr>
+</table>
+
+      
 <p id="date&time"></p>
 <script>
 
@@ -96,71 +114,33 @@ document.getElementById("date&time").innerHTML = d;
 </pre>
 </p>
 
-<!table of contents>
-<table>
+//<!table of contents>
+//<table>
 
-<tr>
-  <th><h3>Table of contents</h3></th>
-</tr>
-<tr>
-  <td><a href="#Abstract">Abstract</td>
-</tr>
-<tr>
-  <td><a href="#Article">Article</td>
-</tr>
-</table>
+//<tr>
+//  <th><h3>Table of contents</h3></th>
+//</tr>
+//<tr>
+//  <td><a href="#Abstract">Abstract</td>
+//</tr>
+//<tr>
+//  <td><a href="#Article">Article</td>
+//</tr>
+//</table>
 
 <p id="date&time"></p>
 
 <script>
 
-Javascript to displayu the date and time on my webpage
+//Javascript to display the date and time on my webpage
 
 const d = new Date();
 document.getElementById("date&time").innerHTML = d;
 
 </script>
 
-<head>
-  <title>Change Button Colour</title>
-</head>
-<body>
-  <button id="colorButton">Click me to change colour</button>
-
-<script>
-  //Get a reference to the button element
-  var button = document.getElementById("colorButton");
-
-  // Function to change the button colour
-  function changeColor() {
-    //Generate a random hex colour
-    var randomColor = "#" +Math.floor(Math.random()*16777215).toString(16);
-
-    //set the button's background color to the random color
-    button.style.backgroundColor = randomColor;
-  }
-
-  //Add a click event listener to the button
-  button.addEventListener("click",changeColor);
-// done
-
-function function1()
-{
-  var str = document.getElementById("text").value;
-  alert(str)
-}
-  
-</script>
-</body>
 
 
-<body>
-  <input id="text" placeholder="Enter... ">
-  <br>
-  <button onclick="function1()" id = "btn">Clikc me</button>
-  
-  
-</body>
   
 
   
